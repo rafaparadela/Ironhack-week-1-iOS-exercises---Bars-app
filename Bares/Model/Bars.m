@@ -29,16 +29,21 @@
 
 
 #pragma mark - Initialization
-- (id)initWithFile:(NSString *)filePath {
+
+- (id)init{
+    return nil;
+}
+
+- (id)initWithFileName:(NSString *)fileName {
     self = [super init];
     
     if (self) {
-        NSString *pathToBarsPList = [[NSBundle mainBundle] pathForResource:@"bars_list" ofType:@"plist"];
+        NSString *pathToBarsPList = [[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];
         NSArray *contentsOfBarsPList = [NSArray arrayWithContentsOfFile:pathToBarsPList];
         
-        for (id loopBar in contentsOfBarsPList) {
-            if ([loopBar isKindOfClass:[Bar class]]) {
-                [self addBarToBarsList:(Bar *)loopBar];
+        for (NSDictionary *loopDictionary in contentsOfBarsPList) {
+            if ([loopDictionary isKindOfClass:[NSDictionary class]]) {
+                [self addBarToBarsList:loopDictionary];
             }
         }
     }
@@ -47,13 +52,20 @@
 }
 
 
-- (void)addBarToBarsList:(Bar *)loopBar {
+- (void)addBarToBarsList:(NSDictionary *)loopDictionary {
     Bar *bar = [[Bar alloc] init];
-    bar.name = loopBar.name;
-    bar.address = loopBar.address;
-    bar.stars = loopBar.stars;
-    bar.position = loopBar.position;
-    bar.photoURL = loopBar.photoURL;
+    bar.name = loopDictionary[@"name"];
+    bar.address = loopDictionary[@"address"];
+    bar.stars = [loopDictionary[@"stars"] unsignedIntegerValue];
+    bar.description = loopDictionary[@"description"];
+    bar.position = loopDictionary[@"position"];
+    bar.photoURL = loopDictionary[@"photoURL"];
+    
+    [self.barsList addObject:bar];
+}
+
+- (NSArray *)allBars{
+    return self.barsList;
 }
 
 @end

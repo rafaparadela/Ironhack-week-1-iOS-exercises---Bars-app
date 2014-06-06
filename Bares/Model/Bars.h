@@ -10,6 +10,7 @@
 
 @interface Bars : NSObject
 
-- (id)initWithFile:(NSString *)filePath;
+- (id)initWithFileName:(NSString *)fileName;
+- (NSArray *)allBars;
 
 @end

@@ -16,10 +16,16 @@
 		<string>Bar Manolo</string>
 		<key>address</key>
 		<string>Calle Larga, 34</string>
+		<key>description</key>
+		<string>Cupcake ipsum dolor sit amet danish cake I love. Ice cream sweet cheesecake candy canes wafer sweet roll I love. Cotton candy donut sugar plum jujubes topping jelly. Chocolate cake candy jujubes liquorice. I love toffee chocolate icing. I love jelly dessert tart I love candy canes muffin. Unerdwear.com I love brownie carrot cake cheesecake lollipop bear claw soufflé. Cheesecake cupcake pie chocolate bar dragée. Chocolate dragée toffee muffin. Donut danish wafer I love donut donut. Dragée cupcake marshmallow. Cupcake dessert icing cheesecake. Lemon drops macaroon chupa chups bonbon apple pie donut macaroon.
+Donut gummi bears cheesecake carrot cake ice cream dragée pastry. Liquorice bear claw donut soufflé gingerbread. Apple pie soufflé croissant pie gummies lemon drops gummi bears soufflé marshmallow. Chocolate cake apple pie chupa chups chocolate. I love lemon drops brownie. Brownie carrot cake sweet roll halvah halvah brownie I love. Fruitcake jelly tiramisu icing I love. Gingerbread cupcake tiramisu caramels tiramisu chocolate sweet. Dessert muffin halvah. I love caramels candy powder lollipop caramels cake. Brownie fruitcake carrot cake ice cream. Liquorice cookie liquorice I love chocolate bar powder applicake oat cake.</string>
 		<key>stars</key>
 		<integer>5</integer>
 	</dict>
 	<dict>
+		<key>description</key>
+		<string>Cupcake ipsum dolor sit. Amet chocolate cake chocolate cake sweet jelly-o I love marzipan. Sugar plum I love pudding powder chupa chups wafer sweet jelly beans. I love I love tiramisu lemon drops toffee icing. Biscuit halvah I love icing tootsie roll marzipan jelly bonbon I love. Chocolate tiramisu soufflé dessert toffee.
+Sugar plum I love biscuit jelly beans cake I love cotton candy. Cake pastry cupcake caramels marshmallow jelly-o fruitcake jelly-o. Cupcake chocolate bar I love I love ice cream unerdwear.com. Jelly-o bear claw chocolate. Dragée chupa chups bear claw chupa chups gummi bears I love marzipan carrot cake. Icing unerdwear.com I love toffee gummi bears I love sweet roll tiramisu. Liquorice candy tiramisu tart pudding. Applicake powder jelly beans.</string>
 		<key>photoURL</key>
 		<string>http://www.cosmopolitantv.es/blogs/gossip/wp-content/uploads/2012/10/beauty.jpg</string>
 		<key>position</key>
@@ -37,6 +43,9 @@
 		<integer>3</integer>
 	</dict>
 	<dict>
+		<key>description</key>
+		<string>Cupcake ipsum dolor sit. Amet marzipan wafer sugar plum tiramisu danish lollipop sugar plum. Jelly-o sesame snaps dessert bear claw. Liquorice macaroon sugar plum cupcake pastry carrot cake pudding lemon drops. Sweet halvah caramels dragée. Tootsie roll applicake cupcake sugar plum cotton candy. Macaroon wafer cheesecake. Topping jelly beans applicake dragée candy jelly unerdwear.com powder. Gingerbread unerdwear.com candy canes powder macaroon gingerbread biscuit I love lollipop. Bear claw chocolate bar jelly beans donut pie topping cotton candy. Apple pie chocolate bar candy gummies lollipop gingerbread caramels. Apple pie dragée powder halvah gingerbread jelly soufflé biscuit chocolate bar. I love gummi bears lollipop macaroon carrot cake bear claw wafer.
+Cheesecake I love muffin sesame snaps candy canes carrot cake pudding. Candy canes gummi bears candy liquorice caramels bonbon. Bonbon jelly-o caramels pastry brownie caramels wafer. Marzipan cupcake candy powder unerdwear.com. Candy chupa chups cupcake chocolate bar gummies bear claw I love gummi bears sugar plum. Sweet wafer brownie marzipan jelly beans caramels. Sugar plum gummies toffee muffin pudding cupcake. Muffin marshmallow marzipan liquorice soufflé chocolate cake. I love sugar plum I love gummies. Jelly beans cupcake lemon drops cake. Gummies carrot cake cupcake sugar plum. Powder fruitcake chocolate bar gummi bears. Gingerbread I love jelly beans sugar plum dragée bonbon.</string>
 		<key>photoURL</key>
 		<string>http://www.omnihotels.com/FindAHotel/IndianapolisSeverin/Dining/~/media/Images/hotels/indsev/other/indianapolis_severin_bar.ashx</string>
 		<key>position</key>
@@ -54,6 +63,8 @@
 		<integer>5</integer>
 	</dict>
 	<dict>
+		<key>description</key>
+		<string>Cupcake ipsum dolor sit amet cake soufflé. Fruitcake pie ice cream sesame snaps. Muffin cotton candy marshmallow cupcake sesame snaps icing cookie I love pudding. Dragée donut candy canes I love. Toffee danish cookie topping pastry. Soufflé candy canes chocolate bar donut brownie fruitcake. Carrot cake fruitcake lollipop. Unerdwear.com I love biscuit. Powder gingerbread candy. Applicake brownie fruitcake sweet roll. I love marshmallow unerdwear.com lollipop croissant liquorice marshmallow fruitcake. Sweet carrot cake I love danish danish. Macaroon icing jelly beans unerdwear.com. I love candy marshmallow dessert gummi bears I love pastry ice cream applicake.</string>
 		<key>photoURL</key>
 		<string>http://www.socialdesignmagazine.com/site/cache/multithumb_thumbs/b_720_0_0_0___images_stories_benedetto_sebastian_barlica_evolution_bar_sebastian_barlica_evolution_bar_03.jpg</string>
 		<key>position</key>

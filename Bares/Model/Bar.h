@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *address;
-@property (nonatomic) NSUInteger *stars;
+@property (nonatomic) NSUInteger stars;
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSDictionary *position;
 @property (nonatomic, strong) NSString *photoURL;

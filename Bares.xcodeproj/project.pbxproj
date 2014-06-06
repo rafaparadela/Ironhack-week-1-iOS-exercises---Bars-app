@@ -22,6 +22,7 @@
 		865076DB1941AF3800D9270D /* BarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076DA1941AF3800D9270D /* BarTests.m */; };
 		865076DE1941B2BE00D9270D /* Bars.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076DD1941B2BE00D9270D /* Bars.m */; };
 		865076E01941B38A00D9270D /* bars_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865076DF1941B38A00D9270D /* bars_list.plist */; };
+		865076E21941B8D800D9270D /* BarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076E11941B8D800D9270D /* BarsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		865076DC1941B2BE00D9270D /* Bars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bars.h; sourceTree = "<group>"; };
 		865076DD1941B2BE00D9270D /* Bars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bars.m; sourceTree = "<group>"; };
 		865076DF1941B38A00D9270D /* bars_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bars_list.plist; sourceTree = "<group>"; };
+		865076E11941B8D800D9270D /* BarsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				865076DA1941AF3800D9270D /* BarTests.m */,
 				865076C11941A68600D9270D /* Supporting Files */,
+				865076E11941B8D800D9270D /* BarsTests.m */,
 			);
 			path = BaresTests;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865076DB1941AF3800D9270D /* BarTests.m in Sources */,
+				865076E21941B8D800D9270D /* BarsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,6 +66,7 @@
 		865076E61941CB8800D9270D /* BaresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaresViewController.m; sourceTree = "<group>"; };
 		865076E81941CFE900D9270D /* DescriptionModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionModalViewController.h; sourceTree = "<group>"; };
 		865076E91941CFE900D9270D /* DescriptionModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionModalViewController.m; sourceTree = "<group>"; };
+		865076EB1941E3DF00D9270D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		865076951941A68600D9270D = {
 			isa = PBXGroup;
 			children = (
+				865076EB1941E3DF00D9270D /* README.md */,
 				865076A71941A68600D9270D /* Bares */,
 				865076C01941A68600D9270D /* BaresTests */,
 				865076A01941A68600D9270D /* Frameworks */,

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>photoURL</key>
+		<string>http://benditosbares.cocacola.es/assets/img/benditosbares/consumidores/coca-cola-benditos-bares.jpg</string>
+		<key>position</key>
+		<dict>
+			<key>longitude</key>
+			<real>-3.704599</real>
+			<key>latitude</key>
+			<real>40.405417</real>
+		</dict>
+		<key>name</key>
+		<string>Bar Manolo</string>
+		<key>address</key>
+		<string>Calle Larga, 34</string>
+		<key>stars</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>photoURL</key>
+		<string>http://www.cosmopolitantv.es/blogs/gossip/wp-content/uploads/2012/10/beauty.jpg</string>
+		<key>position</key>
+		<dict>
+			<key>longitude</key>
+			<real>-3704599</real>
+			<key>latitude</key>
+			<real>40405417</real>
+		</dict>
+		<key>name</key>
+		<string>Beuty bar</string>
+		<key>address</key>
+		<string>Calle Marina, 132</string>
+		<key>stars</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>photoURL</key>
+		<string>http://www.omnihotels.com/FindAHotel/IndianapolisSeverin/Dining/~/media/Images/hotels/indsev/other/indianapolis_severin_bar.ashx</string>
+		<key>position</key>
+		<dict>
+			<key>longitude</key>
+			<real>-3704599</real>
+			<key>latitude</key>
+			<real>40405417</real>
+		</dict>
+		<key>name</key>
+		<string>Indianapolis Severin</string>
+		<key>address</key>
+		<string>Paseo del Prado, 12</string>
+		<key>stars</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>photoURL</key>
+		<string>http://www.socialdesignmagazine.com/site/cache/multithumb_thumbs/b_720_0_0_0___images_stories_benedetto_sebastian_barlica_evolution_bar_sebastian_barlica_evolution_bar_03.jpg</string>
+		<key>position</key>
+		<dict>
+			<key>longitude</key>
+			<real>-3704599</real>
+			<key>latitude</key>
+			<real>40405417</real>
+		</dict>
+		<key>name</key>
+		<string>Cool Bar</string>
+		<key>address</key>
+		<string>Calle Atocha, 578</string>
+		<key>stars</key>
+		<integer>1</integer>
+	</dict>
+</array>
+</plist>

@@ -18,7 +18,10 @@
 		865076BC1941A68600D9270D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865076A11941A68600D9270D /* Foundation.framework */; };
 		865076BD1941A68600D9270D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865076A51941A68600D9270D /* UIKit.framework */; };
 		865076C51941A68600D9270D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 865076C31941A68600D9270D /* InfoPlist.strings */; };
-		865076C71941A68600D9270D /* BaresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076C61941A68600D9270D /* BaresTests.m */; };
+		865076D61941AC3900D9270D /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076D51941AC3900D9270D /* Bar.m */; };
+		865076DB1941AF3800D9270D /* BarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076DA1941AF3800D9270D /* BarTests.m */; };
+		865076DE1941B2BE00D9270D /* Bars.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076DD1941B2BE00D9270D /* Bars.m */; };
+		865076E01941B38A00D9270D /* bars_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865076DF1941B38A00D9270D /* bars_list.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,12 @@
 		865076BA1941A68600D9270D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		865076C21941A68600D9270D /* BaresTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaresTests-Info.plist"; sourceTree = "<group>"; };
 		865076C41941A68600D9270D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		865076C61941A68600D9270D /* BaresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaresTests.m; sourceTree = "<group>"; };
+		865076D41941AC3900D9270D /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		865076D51941AC3900D9270D /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
+		865076DA1941AF3800D9270D /* BarTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarTests.m; sourceTree = "<group>"; };
+		865076DC1941B2BE00D9270D /* Bars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bars.h; sourceTree = "<group>"; };
+		865076DD1941B2BE00D9270D /* Bars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bars.m; sourceTree = "<group>"; };
+		865076DF1941B38A00D9270D /* bars_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bars_list.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 			children = (
 				865076B01941A68600D9270D /* BaresAppDelegate.h */,
 				865076B11941A68600D9270D /* BaresAppDelegate.m */,
+				865076D31941A6B400D9270D /* Assets */,
+				865076D21941A6AD00D9270D /* Model */,
+				865076D11941A69D00D9270D /* Controller */,
+				865076D01941A69300D9270D /* View */,
 				865076B31941A68600D9270D /* Images.xcassets */,
 				865076A81941A68600D9270D /* Supporting Files */,
 			);
@@ -123,13 +135,13 @@
 				865076AD1941A68600D9270D /* main.m */,
 				865076AF1941A68600D9270D /* Bares-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		865076C01941A68600D9270D /* BaresTests */ = {
 			isa = PBXGroup;
 			children = (
-				865076C61941A68600D9270D /* BaresTests.m */,
+				865076DA1941AF3800D9270D /* BarTests.m */,
 				865076C11941A68600D9270D /* Supporting Files */,
 			);
 			path = BaresTests;
@@ -141,7 +153,40 @@
 				865076C21941A68600D9270D /* BaresTests-Info.plist */,
 				865076C31941A68600D9270D /* InfoPlist.strings */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		865076D01941A69300D9270D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		865076D11941A69D00D9270D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		865076D21941A6AD00D9270D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				865076D41941AC3900D9270D /* Bar.h */,
+				865076D51941AC3900D9270D /* Bar.m */,
+				865076DC1941B2BE00D9270D /* Bars.h */,
+				865076DD1941B2BE00D9270D /* Bars.m */,
+				865076DF1941B38A00D9270D /* bars_list.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		865076D31941A6B400D9270D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865076AC1941A68600D9270D /* InfoPlist.strings in Resources */,
+				865076E01941B38A00D9270D /* bars_list.plist in Resources */,
 				865076B41941A68600D9270D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865076D61941AC3900D9270D /* Bar.m in Sources */,
+				865076DE1941B2BE00D9270D /* Bars.m in Sources */,
 				865076B21941A68600D9270D /* BaresAppDelegate.m in Sources */,
 				865076AE1941A68600D9270D /* main.m in Sources */,
 			);
@@ -249,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865076C71941A68600D9270D /* BaresTests.m in Sources */,
+				865076DB1941AF3800D9270D /* BarTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +407,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bares/Bares-Prefix.pch";
-				INFOPLIST_FILE = "Bares/Bares-Info.plist";
+				GCC_PREFIX_HEADER = "Bares/Supporting Files/Bares-Prefix.pch";
+				INFOPLIST_FILE = "Bares/Supporting Files/Bares-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -372,8 +420,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bares/Bares-Prefix.pch";
-				INFOPLIST_FILE = "Bares/Bares-Info.plist";
+				GCC_PREFIX_HEADER = "Bares/Supporting Files/Bares-Prefix.pch";
+				INFOPLIST_FILE = "Bares/Supporting Files/Bares-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,12 +437,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bares/Bares-Prefix.pch";
+				GCC_PREFIX_HEADER = "Bares/Supporting Files/Bares-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BaresTests/BaresTests-Info.plist";
+				INFOPLIST_FILE = "BaresTests/Supporting Files/BaresTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -411,8 +459,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bares/Bares-Prefix.pch";
-				INFOPLIST_FILE = "BaresTests/BaresTests-Info.plist";
+				GCC_PREFIX_HEADER = "Bares/Supporting Files/Bares-Prefix.pch";
+				INFOPLIST_FILE = "BaresTests/Supporting Files/BaresTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -438,6 +486,7 @@
 				865076CC1941A68600D9270D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		865076CD1941A68600D9270D /* Build configuration list for PBXNativeTarget "BaresTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +495,7 @@
 				865076CF1941A68600D9270D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

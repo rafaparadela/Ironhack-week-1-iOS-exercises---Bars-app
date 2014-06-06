@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>983051D2-22EF-4EF3-AD27-38E97E73B784</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Bares</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BB46A2A4-BEEA-42EC-A9F3-52E23994C0B6</key>
+		<string>https://github.com/rafaparadela/Ironhack-week-1-iOS-exercises---Bars-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Bares.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BB46A2A4-BEEA-42EC-A9F3-52E23994C0B6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rafaparadela/Ironhack-week-1-iOS-exercises---Bars-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BB46A2A4-BEEA-42EC-A9F3-52E23994C0B6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BB46A2A4-BEEA-42EC-A9F3-52E23994C0B6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Ironhack-week-1-iOS-exercises---Bars-app</string>
+		</dict>
+	</array>
+</dict>
+</plist>

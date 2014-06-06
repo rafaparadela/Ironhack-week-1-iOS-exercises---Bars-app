@@ -14,6 +14,7 @@
 @interface BaresViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *barNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *barImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *barBGImageView;
 @property (weak, nonatomic) IBOutlet UILabel *barStarsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *barAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *barShortDescriptionLabel;
@@ -24,6 +25,7 @@
 
 @implementation BaresViewController
 
+#define MAX_STARS 5
 
 - (Bars *)bars {
     if (!_bars) {
@@ -55,11 +57,17 @@
     NSData *imageContents = [NSData dataWithContentsOfURL:imageURL];
     UIImage *barImage = [UIImage imageWithData:imageContents];
     self.barImageView.image = barImage;
+    self.barBGImageView.image = barImage;
     
     // Load stars
     NSMutableString *stars = [[NSMutableString alloc] init];
+    NSUInteger j = MAX_STARS;
     for (int i = 0; i < bar.stars; i++) {
         [stars appendString:@"★"];
+        j--;
+    }
+    for (int k=0; k<j; k++) {
+        [stars appendString:@"☆"];
     }
     self.barStarsLabel.text = stars;
     

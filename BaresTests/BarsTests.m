@@ -35,5 +35,18 @@
     XCTAssertTrue([[bars allBars][0] isKindOfClass:[Bar class]]);
 }
 
+- (void)testBarsListsBarHasAllDataSet {
+    Bars *bars = [[Bars alloc] initWithFileName:BARSLIST_FILENAME];
+    
+    for (Bar *bar in [bars allBars]) {
+        XCTAssertTrue([bar.name isKindOfClass:[NSString class]]);
+        XCTAssertTrue([bar.address isKindOfClass:[NSString class]]);
+        XCTAssertTrue(bar.stars > 0);
+        XCTAssertTrue([bar.description isKindOfClass:[NSString class]]);
+        XCTAssertTrue([bar.position isKindOfClass:[NSDictionary class]]);
+        XCTAssertTrue([bar.photoURL isKindOfClass:[NSString class]]);
+    }
+}
+
 
 @end

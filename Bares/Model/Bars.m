@@ -50,8 +50,6 @@
     
     return self;
 }
-
-
 - (void)addBarToBarsList:(NSDictionary *)loopDictionary {
     Bar *bar = [[Bar alloc] init];
     bar.name = loopDictionary[@"name"];
@@ -63,6 +61,7 @@
     
     [self.barsList addObject:bar];
 }
+
 
 - (NSArray *)allBars{
     return self.barsList;

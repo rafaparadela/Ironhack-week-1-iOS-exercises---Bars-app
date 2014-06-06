@@ -8,6 +8,8 @@
 
 #import "BaresViewController.h"
 #import "DescriptionModalViewController.h"
+#import "Bars.h"
+#import "Bar.h"
 
 @interface BaresViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *barNameLabel;
@@ -15,30 +17,64 @@
 @property (weak, nonatomic) IBOutlet UILabel *barStarsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *barAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *barShortDescriptionLabel;
+@property (strong, nonatomic) Bars *bars;
+@property (strong, nonatomic) Bar *bar;
 
 @end
 
 @implementation BaresViewController
 
 
+- (Bars *)bars {
+    if (!_bars) {
+        _bars = [[Bars alloc] initWithFileName:@"bars_list"];
+    }
+    return _bars;
+}
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    
+    [self loadInfoInViewWithBar:[self.bars firstBar]];
 }
 
 
+
+
+#pragma mark - Load data in view
+- (void)loadInfoInViewWithBar:(Bar *)bar {
+    self.barNameLabel.text = bar.name;
+    self.barAddressLabel.text = bar.address;
+    self.barShortDescriptionLabel.text = bar.description;
+    
+    // Load image
+    NSURL *imageURL = [NSURL URLWithString:bar.photoURL];
+    NSData *imageContents = [NSData dataWithContentsOfURL:imageURL];
+    UIImage *barImage = [UIImage imageWithData:imageContents];
+    self.barImageView.image = barImage;
+    
+    // Load stars
+    NSMutableString *stars = [[NSMutableString alloc] init];
+    for (int i = 0; i < bar.stars; i++) {
+        [stars appendString:@"★"];
+    }
+    self.barStarsLabel.text = stars;
+    
+    self.bar = bar;
+}
 
 
 
 
 #pragma mark - Bars navigation
 - (IBAction)loadPreviousBarIntoViewController:(UIButton *)sender {
-    
+    [self loadInfoInViewWithBar:[self.bars previousBar]];
 }
 - (IBAction)loadNextBarIntoViewController:(UIButton *)sender {
-    
+    [self loadInfoInViewWithBar:[self.bars nextBar]];
 }
 
 
@@ -50,7 +86,7 @@
     if ([segue.destinationViewController isKindOfClass:[DescriptionModalViewController class]]) {
         DescriptionModalViewController *descriptionModalViewController = (DescriptionModalViewController *)segue.destinationViewController;
         
-//        descriptionModalViewController.bar = @"kaka";
+        descriptionModalViewController.bar = self.bar;
     }
 }
 

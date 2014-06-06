@@ -86,7 +86,7 @@
 - (Bar *)nextBar{
     if([[self barsList] count] > self.currentBarIndexInList ){
         ++self.currentBarIndexInList;
-        return [self barsList][self.currentBarIndexInList];
+        return [self barsList][self.currentBarIndexInList-1];
     }
     else{
         return [self firstBar];
@@ -94,9 +94,9 @@
 }
 
 - (Bar *)previousBar{
-    if(self.currentBarIndexInList > 0 ){
+    if(self.currentBarIndexInList > 1){
         --self.currentBarIndexInList;
-        return [self barsList][self.currentBarIndexInList];
+        return [self barsList][self.currentBarIndexInList-1];
     }
     else{
         self.currentBarIndexInList = [[self barsList] count];

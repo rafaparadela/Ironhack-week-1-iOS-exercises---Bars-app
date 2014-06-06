@@ -12,6 +12,7 @@
 @interface Bars()
 
 @property (nonatomic, strong) NSMutableArray * barsList;
+@property (nonatomic) NSUInteger currentBarIndexInList;
 
 @end
 
@@ -25,7 +26,12 @@
     return _barsList;
 }
 
-
+- (NSUInteger)currentBarIndexInList{
+    if(!_currentBarIndexInList){
+        _currentBarIndexInList = 1;
+    }
+    return _currentBarIndexInList;
+}
 
 
 #pragma mark - Initialization
@@ -65,6 +71,37 @@
 
 - (NSArray *)allBars{
     return self.barsList;
+}
+
+- (Bar *)firstBar{
+    if([[self barsList] count]){
+        self.currentBarIndexInList = 1;
+        return (Bar *)[self.barsList firstObject];
+    }
+    else{
+        return nil;
+    }
+}
+
+- (Bar *)nextBar{
+    if([[self barsList] count] > self.currentBarIndexInList ){
+        ++self.currentBarIndexInList;
+        return [self barsList][self.currentBarIndexInList];
+    }
+    else{
+        return [self firstBar];
+    }
+}
+
+- (Bar *)previousBar{
+    if(self.currentBarIndexInList > 0 ){
+        --self.currentBarIndexInList;
+        return [self barsList][self.currentBarIndexInList];
+    }
+    else{
+        self.currentBarIndexInList = [[self barsList] count];
+        return (Bar *)[self.barsList lastObject];
+    }
 }
 
 @end

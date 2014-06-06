@@ -23,6 +23,9 @@
 		865076DE1941B2BE00D9270D /* Bars.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076DD1941B2BE00D9270D /* Bars.m */; };
 		865076E01941B38A00D9270D /* bars_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865076DF1941B38A00D9270D /* bars_list.plist */; };
 		865076E21941B8D800D9270D /* BarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076E11941B8D800D9270D /* BarsTests.m */; };
+		865076E41941CAF300D9270D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865076E31941CAF300D9270D /* Storyboard.storyboard */; };
+		865076E71941CB8800D9270D /* BaresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076E61941CB8800D9270D /* BaresViewController.m */; };
+		865076EA1941CFE900D9270D /* DescriptionModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865076E91941CFE900D9270D /* DescriptionModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,11 @@
 		865076DD1941B2BE00D9270D /* Bars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bars.m; sourceTree = "<group>"; };
 		865076DF1941B38A00D9270D /* bars_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bars_list.plist; sourceTree = "<group>"; };
 		865076E11941B8D800D9270D /* BarsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarsTests.m; sourceTree = "<group>"; };
+		865076E31941CAF300D9270D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		865076E51941CB8800D9270D /* BaresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaresViewController.h; sourceTree = "<group>"; };
+		865076E61941CB8800D9270D /* BaresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaresViewController.m; sourceTree = "<group>"; };
+		865076E81941CFE900D9270D /* DescriptionModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionModalViewController.h; sourceTree = "<group>"; };
+		865076E91941CFE900D9270D /* DescriptionModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,7 @@
 		865076D01941A69300D9270D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				865076E31941CAF300D9270D /* Storyboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +178,10 @@
 		865076D11941A69D00D9270D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				865076E51941CB8800D9270D /* BaresViewController.h */,
+				865076E61941CB8800D9270D /* BaresViewController.m */,
+				865076E81941CFE900D9270D /* DescriptionModalViewController.h */,
+				865076E91941CFE900D9270D /* DescriptionModalViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865076AC1941A68600D9270D /* InfoPlist.strings in Resources */,
+				865076E41941CAF300D9270D /* Storyboard.storyboard in Resources */,
 				865076E01941B38A00D9270D /* bars_list.plist in Resources */,
 				865076B41941A68600D9270D /* Images.xcassets in Resources */,
 			);
@@ -290,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				865076D61941AC3900D9270D /* Bar.m in Sources */,
+				865076E71941CB8800D9270D /* BaresViewController.m in Sources */,
+				865076EA1941CFE900D9270D /* DescriptionModalViewController.m in Sources */,
 				865076DE1941B2BE00D9270D /* Bars.m in Sources */,
 				865076B21941A68600D9270D /* BaresAppDelegate.m in Sources */,
 				865076AE1941A68600D9270D /* main.m in Sources */,

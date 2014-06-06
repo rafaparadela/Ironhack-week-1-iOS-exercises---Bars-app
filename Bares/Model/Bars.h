@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Bar.h"
 
 @interface Bars : NSObject
 
 - (id)initWithFileName:(NSString *)fileName;
 - (NSArray *)allBars;
+- (Bar *) firstBar;
+- (Bar *) nextBar;
+- (Bar *) previousBar;
+
 
 @end
